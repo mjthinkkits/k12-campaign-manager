@@ -55,6 +55,66 @@ body {
   color: var(--text-dark);
 }
 
+    <button class="btn btn-primary">Get Started</button>
+
+    /* Button Styles */
+.btn {
+  padding: 12px 24px;
+  border-radius: var(--border-radius);
+  font-weight: var(--font-weight-semibold);
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.btn-primary {
+  background-color: var(--primary-blue);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* A slightly darker blue for hover */
+}
+    <div class="card">
+  <div class="card-icon">
+    </div>
+  <h3 class="card-title">Feature Title</h3>
+  <p class="card-description">A short and engaging description of this amazing feature.</p>
+</div>    
+
+    /* Card Styles */
+.card {
+  background-color: var(--light-gray-bg);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-lg);
+  box-shadow: var(--box-shadow);
+  text-align: center;
+}
+
+.card-icon {
+  margin-bottom: var(--spacing-md);
+  /* Style your icon container here */
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: var(--spacing-sm);
+}
+
+.card-description {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.6;
+}
+    
     <script type="text/babel">
         const { useState, useEffect } = React;
 
