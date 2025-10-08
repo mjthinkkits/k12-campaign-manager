@@ -20,6 +20,40 @@
 </head>
 <body>
     <div id="root"></div>
+    /* :root contains all your global CSS variables */
+:root {
+  /* Colors */
+  --primary-blue: #2563eb; /* A vibrant blue similar to the site's */
+  --light-gray-bg: #f8fafc; /* For backgrounds */
+  --border-color: #e2e8f0;   /* For card borders and dividers */
+  --text-dark: #0f172a;      /* For headings and primary text */
+  --text-light: #64748b;     /* For paragraphs and secondary text */
+  --white: #ffffff;
+
+  /* Typography */
+  --font-family: 'Inter', sans-serif; /* A great, free alternative to the site's font */
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Spacing & Layout */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+
+  /* Borders & Shadows */
+  --border-radius: 0.5rem; /* 8px */
+  --box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+/* Apply a nice default font and background color */
+body {
+  font-family: var(--font-family);
+  background-color: var(--white);
+  color: var(--text-dark);
+}
 
     <script type="text/babel">
         const { useState, useEffect } = React;
