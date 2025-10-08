@@ -1,0 +1,8 @@
+docs/
+  _config.yml
+  index.md
+  assets/
+    css/
+      style.scss
+  _layouts/
+  _includes/
